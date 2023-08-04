@@ -59,7 +59,7 @@ with st.form('my_form'):
         dflegal = conn2.to_dataframe()
         return pd.Series(dflegal.iloc[0])
 
-    df_address_info = pd.DataFrame()
+    df_address_info = pd.DataFrame(columns=['document_id', 'borough', 'street_number', 'street_name', 'block', 'lot'])
         
     for index, row in df_top10.iterrows():
           try:
