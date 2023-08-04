@@ -1,8 +1,6 @@
 from streamlit.connections import ExperimentalBaseConnection
 import requests 
 import pandas as pd
-#import streamlit as st
-#from sodapy import Socrata
 
 class AcrisConnectionRP(ExperimentalBaseConnection):
     """ Class to connect and fetch data from ACRIS API """
