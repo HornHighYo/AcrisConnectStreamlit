@@ -14,7 +14,7 @@ from acris_connect_legals import AcrisConnectionLegal
 st.set_page_config(page_title="Acris Connect")
 st.title("Acris Connect - Connect to NYC Property Information")
 st.sidebar.title("My Submission to the Streamlit Connections Hackathon")
-st.sidebar.write("Using Stremlit St.experimnetal_connection I built a connection to my favorite datasource = New York City Real Estate Data via Acris")
+st.sidebar.write("Using Streamlit St.experimnetal_connection I built a connection to my favorite datasource = New York City Real Estate Data via Acris")
 st.sidebar.title("Acris provides up-to-date information on recorded real estate transactions in NYC (every deed, mortgage and other recorded document")
 st.sidebar.write("Utilizes two API's maintained by NYC OpenData to first search recently recorded documents.  https://data.cityofnewyork.us/City-Government/ACRIS-Real-Property-Master/bnx9-e6tj ")
 st.sidebar.write("And then access the real property information to determine the relevant properties.  https://data.cityofnewyork.us/City-Government/ACRIS-Real-Property-Legals/8h5j-fqxa ")
