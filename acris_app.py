@@ -68,7 +68,8 @@ with st.form('my_form'):
               df_legal = conn2.to_dataframe()
               selected_columns = ['document_id', 'borough','street_number', 'street_name', 'block', 'lot']
               df_legal = df_legal[selected_columns]
-              df_address_info = df_address_info.append(df_legal.iloc[0])
+              df_address_info = pd.concat([df_address_info, df_legal.iloc[0:1]])
+              #df_address_info = df_address_info.append(df_legal.iloc[0])
               print('df_address_info ', df_address_info)
           except Exception as e:
               st.error(f"Could not get address info for Document ID {row['document_id']}: {e}")
